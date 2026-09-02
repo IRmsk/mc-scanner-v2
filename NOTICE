@@ -1,0 +1,34 @@
+MC Scanner V2 借鉴来源声明（NOTICE）
+
+本项目整合了以下开源项目的思路与代码，特此致谢。各来源遵守各自许可证。
+
+一、直接改编的源码（保留 GPL-3.0 许可，本项目因此整体为 GPL-3.0）
+------------------------------------------------------------------
+- mdberkey/minecraft-server-scanner
+  https://github.com/mdberkey/minecraft-server-scanner  (GPL-3.0)
+  * scanner/scan.py        ← 改编自其 scan.py（masscan 封装）
+  * scanner/banner.py      ← 改编自其 import_db.py（banner 解析，去 orjson 依赖）
+  * storage/db.py          ← 改编自其 import_db.py（SQLite upsert，扩展字段）
+  * web/app.py 的 Web 架构 ← 借鉴其 Flask 分页/搜索/过滤思路（自研实现）
+
+二、思路参考（MIT 许可，可自由使用，保留版权声明）
+--------------------------------------------------
+- mat-1/matscan            https://github.com/mat-1/matscan  (MIT)
+  * 扫描/验证两阶段分离、排除列表、协议指纹思路
+- azalea-rs/azalea         https://github.com/azalea-rs/azalea  (MIT+GPL)
+  * 协议代码自动生成思路（gen_packets.py 借鉴其 codegen 理念）
+- DilanBlue/mc-scanner     https://github.com/DilanBlue/mc-scanner  (MIT)
+  * 认证检测协议多级回退、白名单关键词识别、README 合规模板
+- PrismarineJS/minecraft-data  https://github.com/PrismarineJS/minecraft-data  (MIT)
+  * 协议包 ID 权威数据源（protocol.json，自动生成协议表）
+
+三、思路参考（未标许可或其它，仅借鉴设计思路、未复制其源码）
+------------------------------------------------------------
+- 2584210631-star/mc-scanner（自动登录警告机器人、mock 测试、Web 面板思路）
+- minescan-labs/mcprobe（认证模式三态检测思路）
+- Sandelslover/MCScanner（白名单检测、通知、分布式思路）
+- minescan-labs/MineScan（认证分类、持续跟踪思路）
+- mdberkey / hoellwerth（流水线架构）
+- TheOnlyWayUp/check_if_server_cracked（被动检测思路）
+
+注：上述"未标许可"项目，本项目仅参考其公开描述的功能设计思路，未复制其源代码。

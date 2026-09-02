@@ -1,0 +1,16 @@
+# 官方协议数据（gen_packets.py 可重新生成）
+mcdata/
+# Python
+__pycache__/
+*.pyc
+# 运行时产物
+*.db
+*.db-journal
+*.zip
+*.ndjson
+# 系统
+.DS_Store
+# 测试/运行残留
+*.db-shm
+*.db-wal
+web_log.txt
