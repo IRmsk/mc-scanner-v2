@@ -14,3 +14,13 @@ __pycache__/
 *.db-shm
 *.db-wal
 web_log.txt
+# 扫描结果/临时数据（防止真实服务器数据入库）
+*_servers.json
+*_loginable.json
+*_verified.json
+*_stats.json
+scan_*.json
+cracked_*.json
+chat_log_*.html
+*列表*.txt
+*.xlsx
