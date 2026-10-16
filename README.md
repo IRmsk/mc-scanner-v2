@@ -2,7 +2,7 @@
 
 > ## ⚠️ 已停止维护
 >
-> 本项目（v2）已停止更新，功能已完全被 **[mc-scanner-v3](https://github.com/2584210631-star/mc-scanner-v3)** 取代。
+> 本项目（v2）已停止更新，功能已完全被 **[mc-scanner-v3](https://github.com/IRmsk/mc-scanner-v3)** 取代。
 >
 > v3 支持正版 OAuth 登录、聊天签名、多机器人并发、AI 托管、分布式扫描、移动端适配等大量新功能，建议直接迁移到 v3。
 >
@@ -84,4 +84,4 @@ mock 服务器的包 ID 为官方手工核对常量，与实现**分离**，专�
 
 - 直接改编（保留 GPL-3.0）：mdberkey/minecraft-server-scanner（scan.py / import_db.py）
 - 思路参考（MIT）：matscan、azalea、DilanBlue/mc-scanner、PrismarineJS/minecraft-data
-- 思路参考（未标许可，仅借鉴思路未抄代码）：2584210631-star/mc-scanner、mcprobe、Sandelslover/MCScanner、MineScan 等
+- 思路参考（未标许可，仅借鉴思路未抄代码）：IRmsk/mc-scanner、mcprobe、Sandelslover/MCScanner、MineScan 等
